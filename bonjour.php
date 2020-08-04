@@ -1,7 +1,10 @@
 
 <!-- Envoyer des informations en GET par l'URL -->
 
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+session_start();
+?>
 
 <div id="body">
 

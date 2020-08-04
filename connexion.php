@@ -1,7 +1,10 @@
 
 <!-- Page de connexion -->
 
-<?php include("header.php"); ?>
+<?php
+include("header.php");
+session_start();
+?>
 
 <div id="body">
 

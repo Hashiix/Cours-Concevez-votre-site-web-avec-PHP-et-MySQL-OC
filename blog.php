@@ -1,9 +1,11 @@
 
 <!-- Création d'un blog avec billets et commentaires -->
 
-<?php include("connexionbdd.php"); ?>
-
-<?php include("header.php"); ?>
+<?php
+include("connexionbdd.php");
+include("header.php");
+session_start();
+?>
 
 <div id="body">
 

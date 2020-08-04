@@ -1,15 +1,11 @@
-<head>
-    <meta charset="utf-8" />
-    <title>Mon super chat !</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
 
 <!-- Création d'un minichat -->
 
-<?php include("connexionbdd.php"); ?>
-
-<?php include("header.php"); ?>
+<?php
+include("connexionbdd.php");
+include("header.php");
+session_start();
+?>
 
 <div id="body">
 
@@ -33,7 +29,7 @@
             ?>"/>
         </p>
 
-        <p>Message : <input type="text" name="message" maxlength="120" /> (BBCode dispo : gras ( <strong>[b][/b]</strong>), couleurs ( [color=(<span style="color:red">red</span>|<span style="color:green"></span>>|<span style="color:blue">blue</span>|<span style="color:yellow">yellow</span>|<span style="color:purple">purple</span>|<span style="color:olive">olive</span>)][/color] ) et italique ( <em>[i][/i]</em> ). </p>
+        <p>Message : <input type="text" name="message" maxlength="120" /> (BBCode dispo : gras ( <strong>[b][/b]</strong>), couleurs ( [color=(<span style="color:red">red</span>|<span style="color:green"></span>>|<span style="color:blue">blue</span>|<span style="color:yellow">yellow</span>|<span style="color:purple">purple</span>|<span style="color:olive">olive</span>)][/color] ) et italique ( <em>[i][/i]</em> )). </p>
 
         <input type="submit" value="Envoyer" />
 

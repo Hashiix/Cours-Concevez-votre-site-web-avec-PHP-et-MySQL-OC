@@ -1,25 +1,16 @@
 
 <!-- Deconnexion -->
 
-<?php include("header.php"); ?>
+<?php
+session_start();
 
-<div id="body">
-
-    <?php
-
-    if (isset($_SESSION['pseudo']))
-    {
-        $_SESSION = array();
-        session_destroy();
-        header('Location: index.php');
-    }
-    else {
-        header('Location: index.php');
-    }
-
-    ?>
-
-</div>
-
-<?php include('footer.php'); ?>
-
+if (isset($_SESSION['pseudo']))
+{
+    $_SESSION = array();
+    session_destroy();
+    header('Location: index.php');
+}
+else {
+    header('Location: index.php');
+}
+?>

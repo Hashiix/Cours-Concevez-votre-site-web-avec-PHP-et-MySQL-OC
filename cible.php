@@ -1,7 +1,9 @@
 
 <!-- Envoyer des informations en POST par formulaire : -->
 
-<?php include("header.php"); ?>
+<?php include("header.php");
+session_start();
+?>
 
 <div id="body">
 

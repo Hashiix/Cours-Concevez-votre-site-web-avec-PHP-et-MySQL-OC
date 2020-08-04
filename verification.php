@@ -1,5 +1,7 @@
-<?php
 
+<!-- Verification connexion/inscription -->
+
+<?php
 include("connexionbdd.php");
 
 if (isset($_POST['passverify']) AND $_POST['passverify'] === $_POST['pass'])
@@ -34,6 +36,7 @@ if (isset($_POST['passverify']) AND $_POST['passverify'] === $_POST['pass'])
     if (!$resultat) {
         header('Location: connexion.php?fail=');
     } else {
+
         if ($isPasswordCorrect) {
             session_start();
             $_SESSION['pseudo'] = $resultat['pseudo'];

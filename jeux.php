@@ -1,15 +1,11 @@
-<head>
-    <meta charset="utf-8" />
-    <title>Mon super site !</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
 
 <!-- Connexion à une BDD et effectuer une requête -->
 
-<?php include("connexionbdd.php"); ?>
-
-<?php include("header.php"); ?>
+<?php
+include("connexionbdd.php");
+include("header.php");
+session_start();
+?>
 
 <div id="body">
 

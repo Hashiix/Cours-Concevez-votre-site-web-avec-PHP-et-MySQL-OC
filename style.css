@@ -58,6 +58,10 @@ li {
     background-color: rgba(255,255,255,0.6);
     min-height: calc(100vh - 240px);
 }
+#headerdeconnexion {
+    display: flex;
+    align-items: center;
+}
 #intro {
     text-align: center;
     margin-bottom: 30px;
@@ -112,10 +116,6 @@ li {
     align-items: center;
     margin-top: 2%;
 }
-#headerdeconnexion {
-    display: flex;
-    align-items: center;
-}
 #deconnexiondecoration {
     text-decoration: none;
     color: #d4d4dc;
@@ -130,4 +130,3 @@ select {
 submit {
     margin-bottom: 1%;
 }
-

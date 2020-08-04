@@ -1,9 +1,11 @@
 
 <!-- Ajouter un jeu à la BDD -->
 
-<?php include("connexionbdd.php"); ?>
-
-<?php include("header.php"); ?>
+<?php
+include("connexionbdd.php");
+include("header.php");
+session_start();
+?>
 
 <div id="body">
 
@@ -38,4 +40,3 @@
 </div>
 
 <?php include("footer.php"); ?>
-
