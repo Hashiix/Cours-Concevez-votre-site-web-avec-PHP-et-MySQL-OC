@@ -5,4 +5,4 @@ Site crée pour mettre en pratique le cours "Concevez votre site web avec PHP et
 
 Je prévois d'améliorer l'espace membres, le minichat et le blog ainsi que d'y appliquer une architecture MVC.
 
-Lien vers le site :
+Lien vers le site : https://tiagovieirabraz.000webhostapp.com/
